@@ -1,0 +1,20 @@
+.entry a.accordion-title{
+	display: block;
+	background-color: #4dbce9;
+	text-decoration: none;
+	color: #fff;
+	padding: 7px 8px;
+	line-height: 1em;
+	margin-top: 10px;
+}
+
+a.accordion-title.down{
+	
+}
+
+a.accordion-title:hover{
+	
+}
+.accordion-content{
+	padding: 10px 0 1px;
+}
