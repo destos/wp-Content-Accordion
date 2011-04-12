@@ -2,13 +2,13 @@
 /*
 Plugin Name: Content Accordion
 Plugin URI: http://patrick.forringer.com/plugins/content-accordion
-Description: Manage nad create content accordions.
-Version: 0.1
+Description: Manage and create content accordions.
+Version: 0.0.1
 Author: Patrick Forringer
 Author URI: http://patrick.forringer.com
 */
 
-define( PF_CA_VER, '0.1.0' );
+define( PF_CA_VER, '0.0.1' );
 
 /* Set constant path to the volunteers plugin directory. */
 define( PF_CA_DIR, plugin_dir_path( __FILE__ ) );
