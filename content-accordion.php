@@ -8,13 +8,13 @@ Author: Patrick Forringer
 Author URI: http://patrick.forringer.com
 */
 
-define( PF_CA_VER, '0.0.1' );
+define( 'PF_CA_VER', '0.0.1' );
 
 /* Set constant path to the Content Accordion directory. */
-define( PF_CA_DIR, plugin_dir_path( __FILE__ ) );
+define( 'PF_CA_DIR', plugin_dir_path( __FILE__ ) );
 
 /* Set constant path to the Content Accordion URL. */
-define( PF_CA_URL, plugin_dir_url( __FILE__ ) );
+define( 'PF_CA_URL', plugin_dir_url( __FILE__ ) );
 
 class PF_Content_Accordion{
 	
