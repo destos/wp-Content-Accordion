@@ -3,13 +3,15 @@
 $(document).ready(function(){
 	
 	$('a[data-accordion-group]').each(function(){
-		var my_group = $(this).data('accordion-group');
-		var $my_content = $(this).next('.accordion-content');
-		$my_content.width( $my_content.parent().width() ).hide(); // fixe slide jitter by giving width
+		var $myself = $(this).css('display','block');
 		
-		var $myself = $(this);
+		var my_group = $myself.data('accordion-group');
+		var $my_content = $myself.next('.accordion-content');
 		
-		$(this).click(function(){
+		// fixe slide jitter by giving width
+		$my_content.width( $my_content.parent().width() ).hide();
+		
+		$myself.click(function(){
 			// find everyone in my group and trigger collapse them.
 			$('a[data-accordion-group='+my_group+']').not($myself).trigger('compact');
 			

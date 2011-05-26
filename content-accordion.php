@@ -34,17 +34,19 @@ class PF_Content_Accordion{
 	
 	function enqueue_scripts(){
 		if(!is_admin()){
-				wp_enqueue_script( 'PF_Content_Accordion_JS' );
+			wp_enqueue_script( 'PF_Content_Accordion_JS' );
 		}
 	}
 	
 	function do_shortcode( $attrs, $content ){
-
-		$op = (object) shortcode_atts(array(
+		
+		$attrs = shortcode_atts(array(
 				'title' => 'Expand Content',
 				'group' => get_the_ID()
 			), $attrs );
-		
+			
+		$op = (object) apply_filters( 'accordion_attributes', $attrs );
+	
 		return "<a href=\"#\" data-accordion-group=\"{$op->group}\" class=\"accordion-title\">{$op->title}</a><div class=\"accordion-content\">{$content}</div>";
 		
 	}
