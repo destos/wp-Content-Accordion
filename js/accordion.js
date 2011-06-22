@@ -12,7 +12,7 @@ $(document).ready(function(){
 		$my_content.width( $my_content.parent().width() ).hide();
 		
 		$myself.click(function(){
-			// find everyone in my group and trigger collapse them.
+			// find everyone in my group and trigger compact.
 			$('a[data-accordion-group='+my_group+']').not($myself).trigger('compact');
 			
 			if($myself.hasClass('down'))
